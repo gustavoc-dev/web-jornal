@@ -1,0 +1,1395 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+html{
+    height: --webkit-fill-available;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+ 
+
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+
+}
+::-webkit-scrollbar {
+    width: 2px;
+    height: 5px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+}
+
+
+header{
+    background-color: rgb(226, 0, 0);
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    min-height: 5rem;
+    flex-basis: 100%;
+    flex: 1 0 auto;
+}
+
+.logo{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+nav{
+    border-bottom: 1px solid rgba(48, 48, 48, 0.74);
+    height: 2.7rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0 1.5rem;
+    align-items: center;
+    justify-content:center;
+}
+
+nav>a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #363636;
+}
+
+nav>a:hover{
+    border-bottom:rgb(226, 0, 0)solid 5px;
+}
+
+h2:hover,h4:hover{
+    border-bottom: 2px solid rgb(226, 0, 0);
+    cursor: pointer;
+}
+
+.grid-design{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    width: 71rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.grid-div-01{
+    width: 30rem;
+    grid-column: 1/2;
+    grid-row:1/4;
+}
+
+.grid-img01{
+    background-color: blue;
+    width: 31rem;
+    height: 20rem;
+    cursor:pointer;
+}
+
+.grid-div-02{
+    width: 19rem;
+}
+
+.grid-img02{
+    background-color:yellow;
+    width: 19rem;
+    height: 10rem;
+    cursor:pointer;
+}
+
+.grid-div-03{
+    width: 19rem;
+}
+
+.grid-img03{
+    background-color:yellow;
+    width: 19rem;
+    height: 10rem;
+    cursor:pointer;
+}
+
+.grid-div-04{
+    width: 19rem;
+    grid-column: 2/2;
+}
+
+.grid-img04{
+    background-color:yellow;
+    width: 19rem;
+    height: 10rem;
+    cursor:pointer;
+}
+
+.grid-div-05{
+    width: 19rem;
+}
+
+.grid-img05{
+    background-color:yellow;
+    width: 19rem;
+    height: 10rem;
+    cursor:pointer;
+}
+
+.sub{
+    padding: 0.8rem 0;
+    color: #6b6b6b;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+
+.grid-title{
+    font-size: 1.7rem;
+    text-align: start;
+    margin: 0 auto;
+    width: 71rem;
+    margin-top: 3rem;
+
+}
+
+.flex-title{
+    font-size: 1.7rem;
+    text-align: start;
+    margin: 0 auto;
+    width: 71rem;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+}
+
+.flex-design{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    width: 71rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.flex-img{
+    background-color:yellow;
+    width: 16rem;
+    height: 9em;
+    cursor:pointer;
+}
+
+.most-reads{
+    font-size: 1.7rem;
+    text-align: start;
+    margin: 0 auto;
+    width: 71rem;
+     margin-top: 2rem;
+}
+
+.eleventh{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    width: 71rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.number{
+    display: flex;
+    gap: 1rem;
+}
+
+.number-span{
+    font-size: 4rem;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 100;
+    color: rgb(226, 0, 0);
+    align-items: center;
+    justify-content: center;
+}
+
+.number-p{
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+
+}
+
+footer{
+    background-color: rgb(226, 0, 0);
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    min-height: 5rem;
+    flex-basis: 100%;
+    flex: 1 0 auto;
+    margin-top: 2rem;
+}
+
+.about-me{
+    background-color: rgb(36, 36, 36);
+    color: #ffffff;
+}
+
+.about-me-text{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1 0 auto;
+    flex-wrap: wrap;
+    gap: 0.5rem 0;
+}
+
+.about-me hr{
+    width: 15rem;
+}
+
+.about-me-text a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.about-me-text p{
+    padding: 0.5rem 0;
+}
+
+.about-me-text a:hover{
+    font-size: 1.2rem;
+}
+
+
+
+@media screen and (max-width:1175px){
+    .grid-design{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        width: 50rem;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+
+    .grid-img01{
+        width: 30rem;
+    }
+    
+    .flex-title{
+        margin-top: 5rem;
+        margin-bottom:2rem;
+        width: 50rem;
+    }
+
+    .most-reads{
+        margin-top: 4rem;
+        width: 50rem;
+    }
+
+    .grid-title{
+        width: 50rem;
+    }
+    
+    
+    .grid-div-01{
+        width: 29rem;
+        grid-column: 1/2;
+        grid-row:1/3;
+    }
+
+    .grid-div-04{
+        width: 19rem;
+        grid-column: 1/2;
+        margin: 0 auto;
+    }
+    
+    .grid-div-05{
+        width: 19rem;
+    }
+
+    .flex-design{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        width: 50rem;
+        text-align: center;
+        justify-items: center;
+        margin-top: 3rem;
+    }
+    
+    .flex-img{
+        background-color:yellow;
+        width: 19rem;
+        height: 13em;
+    }
+
+    .eleventh{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        width: 50rem;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+    
+    .number{
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .number-span{
+        font-size: 3rem;
+        font-family:'Courier New', Courier, monospace;
+        font-weight: 100;
+        color: rgb(226, 0, 0);
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .number-p{
+        font-size: 1.1rem;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    
+    }
+}
+
+@media screen and (max-width:1024px){ 
+    .grid-design{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        width: 48rem;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+    
+    .grid-div-01{
+        width: 29rem;
+        grid-column: 1/2;
+        grid-row:1/3;
+    }
+
+    .grid-div-04{
+        width: 19rem;
+        grid-column: 1/2;
+        margin: 0 auto;
+    }
+    
+    .grid-div-05{
+        width: 19rem;
+    }
+
+    .flex-design{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        width: 48rem;
+        text-align: center;
+        justify-items: center;
+        margin-top: 3rem;
+    }
+    
+    .flex-img{
+        background-color:yellow;
+        width: 19rem;
+        height: 13em;
+    }
+
+    .eleventh{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        width: 50rem;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+    
+    .number{
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .number-span{
+        font-size: 3rem;
+        font-family:'Courier New', Courier, monospace;
+        font-weight: 100;
+        color: rgb(226, 0, 0);
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .number-p{
+        font-size: 1.1rem;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    
+    }
+}
+
+@media screen and (max-width:850px){ 
+    .flex-title{
+        margin-top: 5rem;
+        margin-bottom:2rem;
+        width: 48rem;
+        padding-left: 1rem;
+    }
+
+    .most-reads{
+        width: 50rem;
+    }
+    
+    .grid-title{
+        width: 40rem;
+    }
+
+    .most-reads{
+        width: 40rem;
+    }
+    
+    
+    nav{
+        overflow: auto;
+        white-space: nowrap;
+    }
+    
+    nav>a{
+        display: inline-block;
+        font-size: 1.2rem;
+    }
+    
+    .grid-design{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        width: 40rem;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+    
+    .grid-img01{
+        width: 40rem;
+        height: 22rem;
+    }
+
+    .grid-div-01{
+        width: 40rem;
+        grid-column: 1/4;
+        grid-row:1/3;
+    }
+    .grid-div-02{
+        width: 19rem;
+        grid-column: 1/2;
+    }
+    .grid-div-03{
+        width: 19rem;
+        grid-column: 2/3;
+    }
+
+
+    .grid-div-04{
+        width: 19rem;
+        grid-column: 1/2;
+    }
+    
+    .grid-div-05{
+        width: 19rem;
+        grid-column: 2/3;
+    }
+
+    .flex-design{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        width: 48rem;
+        text-align: center;
+        justify-items: center;
+        margin-top: 3rem;
+    }
+    
+    .flex-img{
+        background-color:yellow;
+        width: 19rem;
+        height: 13em;
+    }
+
+    .eleventh{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        width: 50rem;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+    
+    .number{
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .number-span{
+        font-size: 3rem;
+        font-family:'Courier New', Courier, monospace;
+        font-weight: 100;
+        color: rgb(226, 0, 0);
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .number-p{
+        font-size: 1.1rem;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    
+    }
+}
+
+@media screen and (max-width:800px){    
+    nav>a{
+        padding: 0 0.2rem;
+        display: inline-block;
+        font-size: 1.1rem;
+    }
+    
+    .eleventh{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 45rem;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+    
+    .number{
+        display: flex;
+    }
+    
+    .number-span{
+        font-size: 3rem;
+        font-family:'Courier New', Courier, monospace;
+        font-weight: 100;
+        color: rgb(226, 0, 0);
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .number-p{
+        font-size: 1rem;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    
+    }
+}
+
+@media screen and (max-width:768px){
+    html{
+        width: 100vw;
+    }
+    nav{
+        gap: 0.8rem;
+    }
+    
+    nav>a{
+        display: inline-block;
+        font-size: 1.1rem;
+    }
+    
+   
+    .flex-design{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        width: 44rem;
+        text-align: center;
+        justify-items: center;
+        margin-top: 3rem;
+    }
+    
+    .flex-img{
+        background-color:yellow;
+        width: 18rem;
+        height: 12em;
+    }
+
+}
+
+@media screen and (max-width:720px){
+    nav{
+        gap: 0.8rem;
+    }
+    
+    nav>a{
+        display: inline-block;
+        font-size: 1.1rem;
+    }
+    
+    .grid-design{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        width: 38rem;
+        margin-top: 3rem;
+    }
+    
+    .grid-img01{
+        width: 38rem;
+        height: 22rem;
+    }
+
+    .grid-div-01{
+        width: 38rem;
+        grid-column: 1/4;
+        grid-row:1/3;
+    }
+    .grid-div-02{
+        width: 19rem;
+        grid-column: 1/2;
+    }
+    .grid-div-03{
+        width: 19rem;
+        grid-column: 2/3;
+    }
+
+
+    .grid-div-04{
+        width: 19rem;
+        grid-column: 1/2;
+    }
+    
+    .grid-div-05{
+        width: 19rem;
+        grid-column: 2/3;
+    }
+    .flex-design{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        width: 40rem;
+        text-align: center;
+        justify-items: center;
+        margin-top: 3rem;
+    }
+    
+    .flex-img{
+        background-color:yellow;
+        width: 18rem;
+        height: 12em;
+    }  
+
+    .eleventh{
+        width: 42rem;
+    }
+    
+    .number-span{
+        font-size: 3rem;
+        font-family:'Courier New', Courier, monospace;
+        font-weight: 100;
+        color: rgb(226, 0, 0);
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .number-p{
+        font-size: 1rem;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    
+    }
+}
+
+@media screen and (max-width:700px){
+    .flex-design{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        margin-top: 3rem;
+    }
+
+    .flex-design-01{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        gap: 0.5rem;
+    }
+
+    .flex-img{
+        width: 21rem;
+        height: 12rem;
+    }
+
+    .flex-design-01 h4{
+        font-size: 1.1rem;
+        width: 20rem;
+        height: 12rem;
+        font-weight: 100;
+        text-align: left;
+    }
+    
+
+}
+
+@media screen and (max-width:680px){
+    .grid-title{
+        padding-left: 2.5rem;
+    }
+    
+    nav{
+        align-items: center;
+        justify-content:flex-start;
+    }
+    
+    nav a{
+        font-size: 1.1rem;
+        text-align: end;
+    }
+
+    .grid-design{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        width: 32rem;
+        margin-top: 3rem;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .grid-img01{
+        width: 32rem;
+        height: 20rem;
+    }
+
+    .grid-img02{
+        width: 14rem;
+    }
+
+    .grid-design h4{
+        width: 16rem;
+        text-align: center;
+    }
+
+    .grid-div-01{
+        width: 34rem;
+        grid-column: 1/4;
+        grid-row:1/3;
+    }
+    .grid-div-02{
+        width: 14rem;
+        grid-column: 1/2;
+    }
+    .grid-div-03{
+        width: 14rem;
+        grid-column: 2/3;
+    }
+
+
+    .grid-div-04{
+        width: 14rem;
+        grid-column: 1/2;
+    }
+    
+    .grid-div-05{
+        width: 14rem;
+        grid-column: 2/3;
+    }
+    
+    .flex-title{
+        padding-left: 2.5rem;
+    }
+    
+    .flex-design{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        margin-top: 3rem;
+        width: 30rem;
+    }
+
+    .flex-design-01{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        gap: 1rem;
+    }
+
+    .flex-img{
+        width: 16rem;
+        height: 10rem;
+    }
+
+    .flex-design-01 h4{
+        font-size: 1.1rem;
+        width: 13rem;
+        height: 10rem;
+        font-weight: 100;
+        text-align: left;
+    }
+    
+    .eleventh{
+        grid-template-columns: repeat(1,1fr);
+        width:35rem ;
+    }
+    
+    .number-span{
+        font-size: 3.5rem;
+    }
+
+    .number-p{
+        font-size:1.2rem ;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    nav{
+        font-size: 1.3rem;
+    }
+    
+    .grid-title{
+        padding-left: 1.5rem;
+    }
+   
+    .grid-design{
+        display: flex;
+        flex-direction: row;
+        font-size: 1.1rem;
+        flex-wrap: wrap;
+        width: 30rem;
+        justify-content: center;
+    }
+
+    .grid-design h2{
+        font-size: 1.5rem;
+    }
+
+    .grid-design h4{
+        width: 15rem;
+    }
+
+    .grid-img02{
+        width: 17rem;
+    }
+
+    .grid-div-02{
+        margin: 0;
+        width: 150rem;
+        display: flex;
+    }
+
+    .grid-div-03{
+        margin: 0;
+        width: 150rem;
+        display: flex;
+        text-align: start;
+    }
+
+    .grid-div-04{
+        margin: 0;
+        width: 150rem;
+        display: flex;
+        text-align: start;
+    }
+
+    .grid-div-05{
+        margin: 0;
+        width: 150rem;
+        display: flex;
+        text-align: start;
+    }
+
+    .flex-design{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        margin-top: 3rem;
+        width: 30rem;
+        align-content: center;
+    }
+
+    .flex-design-01{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        gap: 1rem;
+    }
+
+    .flex-img{
+        width: 17rem;
+        height: 10rem;
+    }
+
+    .flex-design-01 h4{
+        font-size: 1.1rem;
+        width: 15rem;
+        height: 10rem;
+        font-weight: 100;
+    }
+    
+    .eleventh{
+        grid-template-columns: repeat(1,1fr);
+        width:30rem ;
+    }
+    
+    .number-span{
+        font-size: 3.5rem;
+    }
+
+    .number-p{
+        font-size:1.2rem ;
+    }
+}
+
+@media screen and (max-width:540px){
+    nav{
+        font-size: 1.3rem;
+    }
+    
+    .grid-title{
+        width: 25rem;
+        padding-left: 0;
+    }
+   
+    .most-reads{
+        width: 25rem;
+    }
+
+    .grid-design{
+        display: flex;
+        flex-direction: row;
+        font-size: 1.1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 25rem;
+    }
+    .grid-design h2{
+        font-size: 1.5rem;
+        width: 24rem;
+    }
+
+    .grid-design h4{
+        width: 12rem;
+    }
+    .grid-img01{
+        width: 25rem;
+        height: 16rem;
+    }
+
+    .grid-img02{
+        width: 15rem;
+        height: 9rem;
+    }
+
+    .grid-div-01{
+        width: 25rem;
+    }
+
+    .grid-div-02{
+        width: 24rem;
+    }
+    .grid-div-03{
+        width: 24rem;
+    }
+    
+    .grid-div-04{
+        width: 24rem;
+    }
+    
+    .grid-div-05{
+        width: 24rem;
+    }
+
+    .flex-title{
+        width: 25rem;
+    }
+    
+    .flex-design{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        margin-top: 3rem;
+        width: 25rem;
+        align-content: center;
+    }
+
+    .flex-title{
+        width: 25rem;
+        padding-left: 0;
+    }
+
+    .flex-design-01{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        gap: 1rem;
+    }
+
+    .flex-img{
+        width: 15rem;
+        height: 10rem;
+    }
+
+    .flex-design-01 h4{
+        font-size: 1.1rem;
+        width: 10rem;
+        height: 10rem;
+        font-weight: 100;
+        text-align: left;
+    }
+    
+    .eleventh{
+        grid-template-columns: repeat(1,1fr);
+        width:25rem ;
+    }
+    
+    .number-span{
+        font-size: 3.5rem;
+    }
+
+    .number-p{
+        font-size:1.2rem ;
+    }
+}
+
+@media screen and (max-width:433px){
+    nav{
+        font-size: 1.3rem;
+    }
+    
+    .grid-title{
+        padding-left: 1.5rem;
+    }
+   
+    .grid-title{
+        width: 23rem;
+        padding: 0;
+        font-size: 1.6rem;
+        margin-bottom: 0rem;
+    }
+
+    .flex-title{
+        width: 23rem;
+        font-size: 1.6rem;
+    }
+
+    .most-reads{
+        width: 23rem;
+        font-size: 1.6rem;
+    }
+    .grid-design{
+        display: flex;
+        flex-direction: row;
+        font-size: 1.1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 23rem;
+    }
+    .grid-design h2{
+        font-size: 1.4rem;
+        width: 22rem;
+    }
+
+    .grid-design h4{
+        width: 12rem;
+    }
+    .grid-img01{
+        width: 23rem;
+        height: 16rem;
+    }
+
+    .grid-img02{
+        width: 15rem;
+        height: 9rem;
+    }
+
+    .grid-div-01{
+        width: 23rem;
+    }
+
+    .grid-div-02{
+        width: 22rem;
+    }
+    .grid-div-03{
+        width: 22rem;
+    }
+    
+    .grid-div-04{
+        width: 22rem;
+    }
+    
+    .grid-div-05{
+        width: 22rem;
+    }
+    .flex-design{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        margin-top: 3rem;
+        width: 23rem;
+        align-content: center;
+    }
+
+    .flex-design-01{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        gap: 1rem;
+    }
+
+    .flex-img{
+        width: 12rem;
+        height: 10rem;
+    }
+
+    .flex-design-01 h4{
+        font-size: 1.1rem;
+        width: 10rem;
+        height: 10rem;
+        font-weight: 100;
+        text-align: left;
+    }
+    
+    .eleventh{
+        grid-template-columns: repeat(1,1fr);
+        width:23rem ;
+    }
+    
+    .number-span{
+        font-size: 3.5rem;
+    }
+
+    .number-p{
+        font-size:1.2rem ;
+    }
+}
+
+@media screen and (max-width:375px){
+    body{
+        width: 100vw;
+    }
+    
+    nav{
+        font-size: 1.3rem;
+    }
+    
+    .grid-title{
+        padding-left: 1.5rem;
+    }
+   
+    .most-reads{
+        width: 18rem;
+        padding: 0;
+    }
+
+    .grid-design{
+        display: flex;
+        flex-direction: row;
+        font-size: 1.1rem;
+        flex-wrap: wrap;
+        width: 18rem;
+        justify-content: center;
+    }
+
+    .grid-design h2{
+        font-size: 1.2rem;
+        width: 18rem;
+    }
+
+    .grid-design h4{
+        width: 11rem;
+        padding: 1rem;
+        font-size: 1rem;        
+    }
+    .grid-img01{
+        width: 18rem;
+        height: 14rem;
+    }
+
+    .grid-img02{
+        width: 10rem;
+        height: 7rem;
+    }
+
+    .grid-div-02{
+        width: 22rem;
+    }
+    .grid-div-03{
+        width: 22rem;
+    }
+    
+    .grid-div-04{
+        width: 22rem;
+    }
+    
+    .grid-div-05{
+        width: 22rem;
+    }
+
+    .flex-title{
+        padding-left: 1rem;
+        font-size: 1.5rem;
+    }
+    
+    .flex-design{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        margin-top: 3rem;
+        width: 20rem;
+        align-content: center;
+    }
+
+    .flex-design-01{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        gap: 1rem;
+    }
+
+    .flex-img{
+        width: 10rem;
+        height: 8rem;
+    }
+
+    .flex-design-01 h4{
+        font-size: 1rem;
+        width: 9rem;
+        height: 10rem;
+        font-weight: 100;
+        text-align: left;
+    }
+    
+    .eleventh{
+        grid-template-columns: repeat(1,1fr);
+        width:20rem ;
+    }
+    
+    .number-span{
+        font-size: 3rem;
+    }
+
+    .number-p{
+        font-size:1rem ;
+    }
+}
+
+@media screen and (max-width:340px){
+    nav{
+        font-size: 1.3rem;
+    }
+    
+    .grid-title{
+        padding-left: 1.5rem;
+        width: 18rem;
+    }
+   
+
+    .grid-design{
+        display: flex;
+        flex-direction: row;
+        font-size: 1.1rem;
+        flex-wrap: wrap;
+        width: 18rem;
+        justify-content: center;
+    }
+
+    .grid-design h2{
+        font-size: 1.2rem;
+        width: 18rem;
+    }
+
+    .grid-design h4{
+        width: 9rem;
+        padding: 1rem;
+        font-size: 1rem;        
+    }
+
+    .grid-img01{
+        width: 18rem;
+        height: 15rem;
+    }
+
+    .grid-img02{
+        width: 9rem;
+        height: 6rem;
+    }
+
+    .grid-div-02{
+        width: 22rem;
+    }
+    .grid-div-03{
+        width: 22rem;
+    }
+    
+    .grid-div-04{
+        width: 22rem;
+    }
+    
+    .grid-div-05{
+        width: 22rem;
+    }
+
+    .flex-title{
+        padding-left: 1.5rem;
+        font-size: 1.5rem;
+        width: 18rem;
+    }
+    
+
+    .most-reads{
+        width: 18rem;
+    }
+    .flex-design{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        margin-top: 3rem;
+        width: 18rem;
+        align-content: center;
+    }
+
+    .flex-design-01{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        gap: 1rem;
+        height: 6rem;
+    }
+
+    .flex-img{
+        width: 8rem;
+        height: 6rem;
+    }
+
+    .flex-design-01 h4{
+        font-size: 1rem;
+        width: 8rem;
+        height: 10rem;
+        font-weight: 100;
+        text-align: left;
+    }
+    
+    .eleventh{
+        grid-template-columns: repeat(1,1fr);
+        width:18rem ;
+    }
+    
+    .number-span{
+        font-size: 3rem;
+    }
+
+    .number-p{
+        font-size:1rem ;
+    }
+}
